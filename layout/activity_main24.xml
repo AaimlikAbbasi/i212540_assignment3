@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity24"
+    android:background="#CEF5FA">
+
+
+    <RelativeLayout
+        android:id="@+id/rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/acticity_10_rectangle">
+
+
+        <ImageView
+            android:id="@+id/arrowImageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="20dp"
+            android:paddingTop="20dp"
+            android:rotation="-135"
+            android:src="@drawable/arrow_right_top_svgrepo_com"
+            android:contentDescription="Arrow Icon"
+            app:tint="#0B7C71" />
+
+        <TextView
+            android:id="@+id/main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+
+            android:paddingTop="20dp"
+            android:text="Edit Profile"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView40"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="509dp"
+        app:srcCompat="@drawable/rod" />
+
+
+    <RelativeLayout
+
+        android:layout_width="390dp"
+        android:layout_height="90dp"
+        android:id="@+id/first"
+        android:layout_marginTop="190dp"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="3dp"
+            android:text="Name"
+            android:textColor="#0B7C71"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:drawablePadding="8dp"
+            android:hint="Ali"
+            android:padding="20dp"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+
+        android:layout_width="390dp"
+        android:layout_height="90dp"
+        android:id="@+id/second"
+        android:layout_below="@+id/first"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="3dp"
+            android:text="Email"
+            android:textColor="#0B7C71"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/name1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:drawablePadding="8dp"
+            android:hint="ali@gmail.com"
+            android:padding="20dp"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="390dp"
+        android:layout_below="@+id/second"
+        android:layout_height="90dp"
+        android:id="@+id/third"
+        android:layout_marginTop="1dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="3dp"
+            android:text="Contact Number"
+            android:textColor="#0B7C71"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/name2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:drawablePadding="2dp"
+            android:hint="+92 321 2242022"
+            android:padding="10dp"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="390dp"
+        android:id="@+id/four"
+        android:layout_below="@+id/third"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="3dp"
+            android:text="Country"
+            android:textColor="#0B7C71"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/name22"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="10dp"
+            android:drawablePadding="8dp"
+            android:hint="Pakistan"
+            android:padding="8dp"
+            android:textColor="@color/black" />
+        <ImageView
+            android:id="@+id/imageView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="245dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp"
+            app:srcCompat="@drawable/arrow_drop_down_svgrepo_com" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="390dp"
+        android:id="@+id/five"
+        android:layout_below="@+id/four"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="3dp"
+            android:text="City"
+            android:textColor="#0B7C71"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/name23"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="10dp"
+            android:drawablePadding="8dp"
+            android:hint="Islamabad"
+            android:padding="8dp"
+            android:textColor="@color/black" />
+        <ImageView
+            android:id="@+id/imageView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="245dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp"
+            app:srcCompat="@drawable/arrow_drop_down_svgrepo_com" />
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/loginButton3"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/five"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#0B7C71"
+        android:background="@drawable/activity10_rec"
+        android:text="Update Profile"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+</RelativeLayout>
+
+
+

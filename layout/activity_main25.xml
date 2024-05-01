@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity25"
+    android:background="#CEF5FA">
+
+
+    <RelativeLayout
+        android:id="@+id/rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/backgroundImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/twocircle2"/>
+
+        <ImageView
+            android:id="@+id/arrowImageView"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="10dp"
+            android:rotation="-135"
+            android:src="@drawable/arrow_right_top_svgrepo_com"
+            android:contentDescription="Arrow Icon"
+            app:tint="#0B7C71" />
+
+
+        <TextView
+            android:id="@+id/main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="-45dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/arrowImageView"
+            android:paddingTop="20dp"
+            android:text="Booked Sessions"
+            android:textColor="#0B7C71"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="77dp"
+        android:layout_height="134dp"
+        android:layout_below="@+id/rectangle"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="9dp"
+
+        android:layout_marginBottom="456dp"
+        app:srcCompat="@drawable/person9" />
+
+    <ImageView
+        android:id="@+id/imageView42"
+        android:layout_width="77dp"
+        android:layout_height="134dp"
+        android:layout_below="@+id/rectangle"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="150dp"
+        app:srcCompat="@drawable/person10" />
+    <RelativeLayout
+        android:layout_width="240dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@+id/imageView31"
+        android:layout_height="120dp">
+        <!-- Inner rectangle -->
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/lightwhite" />
+
+        <!-- First TextView -->
+        <TextView
+            android:id="@+id/firsttext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="John Cooper" />
+
+        <!-- Second TextView in front of the first TextView -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="57dp"
+            android:text="24th Dec 2023"
+            android:textColor="#FFEB3B"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:id="@+id/firsttext2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_below="@+id/firsttext"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="-46dp"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            android:text="Lead - Technology Officer"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="72dp"
+            android:text="1pm"
+            android:textColor="#FFEB3B"
+            android:textSize="16sp"
+            />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="240dp"
+
+        android:layout_marginTop="270dp"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@+id/imageView42"
+        android:layout_height="120dp">
+        <!-- Inner rectangle -->
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/lightwhite" />
+
+        <!-- First TextView -->
+        <TextView
+            android:id="@+id/firsttext1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="Emma Phillips" />
+
+        <!-- Second TextView in front of the first TextView -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="57dp"
+            android:text="1st Jan 2024"
+            android:textColor="#FFEB3B"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/firsttext22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_below="@+id/firsttext1"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="-46dp"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:text="Android Developer"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="72dp"
+            android:text="9:00pm"
+            android:textColor="#FFEB3B"
+            android:textSize="16sp"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+

@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity14"
+    android:background="#CEF5FA">
+
+
+
+    <ImageView
+        android:id="@+id/arrowImageView9"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="10dp"
+        android:rotation="-135"
+        android:src="@drawable/arrow_right_top_svgrepo_com"
+        android:contentDescription="Arrow Icon"
+        app:tint="#0B7C71" />
+
+
+    <TextView
+        android:id="@+id/main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:paddingTop="20dp"
+        android:text="Chats"
+        android:textColor="#0B7C71"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/main2"
+        android:layout_below="@+id/main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:paddingTop="10dp"
+        android:text="My Community"
+        android:textColor="#5F6766"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/profileImage"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main2"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="1dp">
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/yellowring"
+            android:layout_margin="10dp" /> <!-- Adjust margin as needed -->
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="38dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="24dp"
+            app:srcCompat="@drawable/yellowfulledcircle" />
+
+        <ImageView
+            android:id="@+id/profileImage1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="Profile Image"
+            android:src="@drawable/man1" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main2"
+        android:id="@+id/profileImage2"
+        android:layout_toRightOf="@+id/profileImage"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="25dp">
+
+        <!-- Yellow Ring Background -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/yellowring"
+            android:layout_margin="10dp" /> <!-- Adjust margin as needed -->
+
+        <!-- Grey Circle -->
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="38dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="24dp"
+            app:srcCompat="@drawable/yellowfulledcircle" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:id="@+id/man22"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="Profile Image"
+            android:src="@drawable/man2" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main2"
+        android:id="@+id/profileImage3"
+        android:layout_toRightOf="@+id/profileImage2"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="25dp">
+
+        <!-- Yellow Ring Background -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/yellowring"
+            android:layout_margin="10dp" /> <!-- Adjust margin as needed -->
+
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="38dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="24dp"
+            app:srcCompat="@drawable/yellowfulledcircle"/>
+
+
+        <ImageView
+            android:id="@+id/man33"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="Profile Image"
+            android:src="@drawable/man3" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main2"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@+id/profileImage3"
+        android:id="@+id/profileImage4"
+        android:layout_marginStart="25dp">
+
+        <!-- Yellow Ring Background -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/yellowring"
+            android:layout_margin="10dp" /> <!-- Adjust margin as needed -->
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:id="@+id/man44"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="Profile Image"
+            android:src="@drawable/man4" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="38dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="24dp"
+            app:srcCompat="@drawable/lightgreycircle" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main2"
+
+        android:id="@+id/profileImage5"
+        android:layout_toRightOf="@+id/profileImage4"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="25dp">
+
+        <!-- Yellow Ring Background -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/yellowring"
+            android:layout_margin="10dp" /> <!-- Adjust margin as needed -->
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/man55"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="Profile Image"
+            android:src="@drawable/man5" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="38dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="24dp"
+            app:srcCompat="@drawable/yellowfulledcircle" />
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/main3"
+        android:layout_below="@+id/profileImage5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:paddingTop="10dp"
+        android:text="All Messages"
+        android:textColor="#5F6766"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_below="@+id/main3"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view2"
+        android:layout_below="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="635dp"
+       >
+
+        <!-- Grey rectangle background -->
+        <RelativeLayout
+            android:id="@+id/rectangleBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sevenrectangle">
+
+            <!-- Icon 1: Home -->
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                app:srcCompat="@drawable/home_icon_silhouette_svgrepo_com" />
+
+            <!-- Name for Icon 1: Home -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon1"
+                android:textColor="@color/white"
+                android:layout_marginStart="30dp"
+                android:layout_centerHorizontal="false"
+                android:text="Home" />
+
+            <!-- Icon 3: Search -->
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/icon1"
+                android:layout_marginStart="50dp"
+                app:tint="#D7D0D8"
+                app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
+
+            <!-- Name for Icon 3: Search -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon3"
+                android:textColor="@color/white"
+                android:layout_marginStart="120dp"
+                android:layout_centerHorizontal="false"
+                android:text="Search" />
+
+            <!-- Icon 4: Chat -->
+            <ImageView
+                android:id="@+id/icon4"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/icon3"
+                android:layout_marginStart="50dp"
+                app:tint="#D7D0D8"
+                app:srcCompat="@android:drawable/stat_notify_chat" />
+
+            <!-- Name for Icon 4: Chat -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon4"
+                android:textColor="@color/white"
+                android:layout_marginStart="225dp"
+                android:layout_centerHorizontal="false"
+                android:text="Chat" />
+
+            <!-- Icon 2: Profile -->
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/icon4"
+                android:layout_marginStart="50dp"
+                app:srcCompat="@drawable/user_profile_svgrepo_com" />
+
+            <!-- Name for Icon 2: Profile -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon2"
+                android:textColor="@color/white"
+                android:layout_marginStart="320dp"
+                android:layout_centerHorizontal="false"
+                android:text="Profile" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="620dp"
+        android:layout_marginStart="170dp"
+        android:background="@drawable/small_circle"
+        android:src="@drawable/plus"
+        app:tint="@android:color/white" />
+
+
+
+
+
+</RelativeLayout>
+
+
+
+
+
+

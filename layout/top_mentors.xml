@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:id="@+id/topmentors"
+    android:layout_height="match_parent">
+
+        <!-- Example TextView with grey square background -->
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/greyrectangle">
+
+            <!-- Inner rectangle -->
+            <View
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/lightwhite" />
+
+            <!-- First TextView -->
+            <TextView
+                android:id="@+id/firsttext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginEnd="40dp"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:text="John Cooper" />
+
+            <!-- Second TextView in front of the first TextView -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/cost"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/firsttext"
+                android:text="$1500/Session"
+                android:layout_marginStart="-45dp"
+                android:textColor="#FFEB3B"
+                android:textSize="5sp"
+                />
+            <TextView
+                android:id="@+id/firsttext2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_below="@+id/firsttext"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="-50dp"
+                android:textColor="@color/black"
+                android:textSize="6sp"
+                android:text="UX Designer @ Googler"
+                />
+            <ImageView
+                android:id="@+id/heartImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="68dp"
+                android:src="@drawable/red_heart_icon"
+                android:contentDescription="Heart Icon"/>
+            <View
+                android:id="@+id/smallGreenCircle"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_below="@id/firsttext2"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/greencircle" />
+
+            <!-- Text -->
+            <TextView
+                android:id="@+id/smallCircleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="87dp"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/smallGreenCircle"
+                android:text="Available"
+                android:textColor="#8BC34A"
+                android:textSize="8sp" />
+        </RelativeLayout>
+</RelativeLayout>

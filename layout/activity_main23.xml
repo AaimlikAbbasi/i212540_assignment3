@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity23"
+    android:background="#CEF5FA">
+
+    <ImageView
+        android:id="@+id/arrowImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="20dp"
+        android:rotation="-135"
+        android:src="@drawable/arrow_right_top_svgrepo_com"
+        android:contentDescription="Arrow Icon"
+        app:tint="#0B7C71" />
+
+    <TextView
+        android:id="@+id/main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="3dp"
+        android:layout_toRightOf="@+id/arrowImageView"
+        android:layout_marginTop="20dp"
+
+        android:text="My Profile"
+        android:textColor="#0B7C71"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/main2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="100dp"
+        android:layout_toRightOf="@+id/main"
+        android:layout_marginTop="20dp"
+
+        android:text="..."
+        android:textColor="#0B7C71"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView32"
+        android:layout_width="match_parent"
+        android:layout_height="199dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="465dp"
+        app:srcCompat="@drawable/checkerboardpattern" />
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="212dp"
+
+        android:layout_height="243dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="147dp"
+        android:layout_marginEnd="211dp"
+        app:srcCompat="@drawable/rod" />
+
+    <ImageView
+        android:id="@+id/imageView34"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:layout_marginStart="100dp"
+        android:background="@drawable/small_circle"
+        android:layout_marginTop="256dp"
+        android:layout_marginBottom="416dp"
+        app:srcCompat="@drawable/pencil_svgrepo_com"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/small_circle"
+        android:padding="10dp"
+        app:srcCompat="@drawable/pencil_svgrepo_com"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_below="@+id/imageView34"
+        android:layout_marginTop="-400dp"
+        android:textSize="17sp"
+        android:text="ALI"
+        android:textStyle="bold"
+        android:textColor="#0B7C71"
+        android:layout_marginBottom="365dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView36"
+        android:layout_width="35dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="330dp"
+
+        android:layout_marginBottom="330dp"
+        app:srcCompat="@drawable/map_pin_svgrepo_com"
+        app:tint="#B6ADAD" />
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:text="islamabad"
+        android:layout_marginTop="330dp"
+        android:textSize="18sp"
+        android:textColor="#B6ADAD"
+        android:layout_marginBottom="300dp"
+
+        />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginBottom="310dp"
+        android:backgroundTint="#FFC107"
+        android:text="Book Sessions"
+        android:textColor="#0B7C71"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp" />
+
+    <TextView
+        android:id="@+id/main3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="-67dp"
+        android:layout_marginTop="405dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="239dp"
+        android:layout_toRightOf="@+id/arrowTextView"
+        android:text="Favourite Mentors"
+        android:textColor="#0B7C71"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <!-- Example TextView with grey square background -->
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="430dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="122dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Example TextView with grey square background -->
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/greyrectangle">
+
+                <!-- Inner rectangle -->
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/lightwhite" />
+
+                <!-- First TextView -->
+                <TextView
+                    android:id="@+id/firsttext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="40dp"
+                    android:gravity="center"
+                    android:text="John Cooper"
+                    android:textColor="@color/black"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+                <!-- Second TextView in front of the first TextView -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="-45dp"
+                    android:layout_toRightOf="@id/firsttext"
+                    android:text="$1500/Session"
+                    android:textColor="#FFEB3B"
+                    android:textSize="5sp" />
+
+                <TextView
+                    android:id="@+id/firsttext2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/firsttext"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="-50dp"
+                    android:layout_marginEnd="40dp"
+                    android:gravity="center"
+                    android:text="UX Designer @ Googler"
+                    android:textColor="@color/black"
+                    android:textSize="6sp" />
+
+                <ImageView
+                    android:id="@+id/heartImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="68dp"
+                    android:layout_marginEnd="20dp"
+                    android:contentDescription="Heart Icon"
+                    android:src="@drawable/red_heart_icon" />
+
+                <View
+                    android:id="@+id/smallGreenCircle"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_below="@id/firsttext2"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/greencircle" />
+
+                <!-- Text -->
+                <TextView
+                    android:id="@+id/smallCircleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="87dp"
+                    android:layout_toEndOf="@id/smallGreenCircle"
+                    android:text="Available"
+                    android:textColor="#8BC34A"
+                    android:textSize="8sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/greyrectangle"
+                android:gravity="center">
+
+                <!-- Inner rectangle -->
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/lightwhite" />
+
+                <!-- First TextView -->
+                <TextView
+                    android:id="@+id/firsttext1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="40dp"
+                    android:gravity="center"
+                    android:text="Martina Watson"
+                    android:textColor="@color/black"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+                <!-- Second TextView in front of the first TextView -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="-45dp"
+                    android:layout_toRightOf="@id/firsttext1"
+                    android:text="$1500/Session"
+                    android:textColor="#FFEB3B"
+                    android:textSize="5sp" />
+
+                <TextView
+                    android:id="@+id/firsttext22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/firsttext1"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="-50dp"
+                    android:layout_marginEnd="40dp"
+                    android:gravity="center"
+                    android:text="Lead - Technology Officer"
+                    android:textColor="@color/black"
+                    android:textSize="6sp" />
+
+                <ImageView
+                    android:id="@+id/heartImageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="68dp"
+                    android:layout_marginEnd="20dp"
+                    android:contentDescription="Heart Icon"
+                    android:src="@drawable/grey_heart" />
+
+                <View
+                    android:id="@+id/smallgreycircle"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_below="@id/firsttext22"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/lightgreycircle" />
+
+                <!-- Text -->
+                <TextView
+                    android:id="@+id/smallCircleText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="87dp"
+                    android:layout_toEndOf="@id/smallgreycircle"
+                    android:text="Not Available"
+                    android:textColor="#A9A9A9"
+                    android:textSize="8sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/greyrectangle"
+                android:gravity="center">
+
+                <!-- Inner rectangle -->
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/lightwhite" />
+
+                <!-- First TextView -->
+                <TextView
+                    android:id="@+id/firsttext3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="40dp"
+                    android:gravity="center"
+                    android:text="Emma"
+                    android:textColor="@color/black"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+                <!-- Second TextView in front of the first TextView -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="-45dp"
+                    android:layout_toRightOf="@id/firsttext3"
+                    android:text="$1500/Session"
+                    android:textColor="#FFEB3B"
+                    android:textSize="5sp" />
+
+                <TextView
+                    android:id="@+id/firsttext23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/firsttext3"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="-50dp"
+                    android:layout_marginEnd="40dp"
+                    android:gravity="center"
+                    android:text="Lead - Corporate Officer"
+                    android:textColor="@color/black"
+                    android:textSize="6sp" />
+
+                <ImageView
+                    android:id="@+id/heartImageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="68dp"
+                    android:layout_marginEnd="20dp"
+                    android:contentDescription="Heart Icon"
+                    android:src="@drawable/grey_heart" />
+
+                <View
+                    android:id="@+id/smallgreycircle3"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_below="@id/firsttext23"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/lightgreycircle" />
+
+                <!-- Text -->
+                <TextView
+                    android:id="@+id/smallCircleText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="87dp"
+                    android:layout_toEndOf="@id/smallgreycircle3"
+                    android:text="Not Available"
+                    android:textColor="#A9A9A9"
+                    android:textSize="8sp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/main4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="-30dp"
+        android:layout_marginTop="560dp"
+        android:layout_marginEnd="161dp"
+        android:text="My Reviews"
+        android:textColor="#0B7C71"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/box"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main4">
+
+        <ImageView
+            android:id="@+id/imageView37"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:src="@drawable/abi1" />
+
+        <ImageView
+            android:id="@+id/imageView38"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:src="@drawable/abi2"
+            android:layout_toEndOf="@id/imageView37"
+            android:layout_marginStart="1dp" />
+
+        <ImageView
+            android:id="@+id/imageView39"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:src="@drawable/abi3"
+            android:layout_toEndOf="@id/imageView38"
+            android:layout_marginStart="20dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/box">
+
+        <!-- Grey rectangle background -->
+        <RelativeLayout
+            android:id="@+id/rectangleBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sevenrectangle">
+
+            <!-- Icon 1: Home -->
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                app:srcCompat="@drawable/home_icon_silhouette_svgrepo_com" />
+
+            <!-- Name for Icon 1: Home -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon1"
+                android:textColor="@color/white"
+                android:layout_marginStart="30dp"
+                android:layout_centerHorizontal="false"
+                android:text="Home" />
+
+            <!-- Icon 3: Search -->
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/icon1"
+                android:layout_marginStart="50dp"
+                app:tint="#D7D0D8"
+                app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
+
+            <!-- Name for Icon 3: Search -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon3"
+                android:textColor="@color/white"
+                android:layout_marginStart="120dp"
+                android:layout_centerHorizontal="false"
+                android:text="Search" />
+
+            <!-- Icon 4: Chat -->
+            <ImageView
+                android:id="@+id/icon4"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/icon3"
+                android:layout_marginStart="50dp"
+                app:tint="#D7D0D8"
+                app:srcCompat="@android:drawable/stat_notify_chat" />
+
+            <!-- Name for Icon 4: Chat -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon4"
+                android:textColor="@color/white"
+                android:layout_marginStart="225dp"
+                android:layout_centerHorizontal="false"
+                android:text="Chat" />
+
+            <!-- Icon 2: Profile -->
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/icon4"
+                android:layout_marginStart="50dp"
+                app:srcCompat="@drawable/user_profile_svgrepo_com" />
+
+            <!-- Name for Icon 2: Profile -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon2"
+                android:textColor="@color/white"
+                android:layout_marginStart="320dp"
+                android:layout_centerHorizontal="false"
+                android:text="Profile" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/box"
+        android:textColor="@color/white"
+        android:layout_marginTop="-5dp"
+        android:layout_marginStart="170dp"
+        android:background="@drawable/small_circle"
+        android:src="@drawable/plus"
+        app:tint="@android:color/white" />
+
+
+
+
+
+</RelativeLayout>
+
+
+

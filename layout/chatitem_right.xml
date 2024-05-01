@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/chatitem_right"
+    android:padding="8dp"
+    tools:context=".MainActivity18"
+    android:background="#CEF5FA">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:id="@+id/rectangle"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="1dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage1"
+            android:layout_width="77dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="134dp"
+            android:visibility="gone"
+            tools:ignore="MissingClass" />
+        <ImageView
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="7sp"
+              android:id="@+id/btn_more"
+            android:src="@drawable/more"
+            android:layout_centerVertical="true"/>
+
+
+
+        <ImageView
+            android:id="@+id/chatImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="hello"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/acticity_10_rectangle"
+            android:id="@+id/show_message"
+            android:textColor="@color/black"
+            android:padding="8dp"
+            />
+        <ImageView
+            android:id="@+id/voiceNoteIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/show_message"
+            android:layout_marginTop="8dp"
+            app:tint="@color/white"
+            app:srcCompat="@android:drawable/ic_btn_speak_now"
+            android:visibility="gone" />
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+

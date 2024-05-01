@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CEF5FA"
+    tools:context=".MainActivity4">
+
+
+    <TextView
+        android:id="@+id/arrowTextView"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="600dp"
+        android:background="@drawable/twocircle2"
+        android:paddingTop="20dp"
+
+        android:textAlignment="textStart"
+        android:textColor="#0B7C71"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!-- Outer RelativeLayout -->
+    <RelativeLayout
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="false"
+        android:layout_marginTop="30dp">
+
+        <!-- EditText for "Hello, Ali" -->
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="@null"
+            android:minHeight="48dp"
+            android:text="Hello, Ali"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- Circle View -->
+        <View
+            android:id="@+id/circleView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/small_circle" />
+
+        <!-- ImageView on top of the circle -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@id/circleView"
+            android:layout_alignEnd="@id/circleView"
+            android:layout_marginEnd="13dp"
+            android:layout_marginTop="13dp"
+            android:rotation="28"
+            android:background="@drawable/small_circle"
+            app:srcCompat="@android:drawable/ic_popup_reminder"
+            app:tint="@color/white" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/phonePrefix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/one"
+        android:layout_marginStart="20dp"
+        android:text="Ready for mentorship? Let’s begin the journey!"
+        android:textColor="#0B7C71"
+        android:textSize="16sp" />
+
+    <!-- HorizontalScrollView for category TextViews -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phonePrefix"
+        android:id="@+id/scroll"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- TextViews for each category -->
+            <TextView
+                android:id="@+id/allText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:background="@drawable/sevenrectangle"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/educationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_toRightOf="@id/allText"
+                android:text="Education"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:background="@drawable/sevenkoltin1"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/entrepreneurshipText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_toRightOf="@id/educationText"
+                android:text="Entrepreneurship"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:background="@drawable/sevenkoltin1"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/personalGrowthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_toRightOf="@id/entrepreneurshipText"
+                android:text="Personal Growth"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:background="@drawable/sevenkoltin1"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/careerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_toRightOf="@id/personalGrowthText"
+                android:text="Career"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:background="@drawable/sevenkoltin1"
+                android:padding="8dp" />
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scroll"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="24dp"
+        android:text="Top Mentors for you"
+        android:textColor="#0B7C71"
+        android:textStyle="bold"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/viewAllText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scroll"
+        android:layout_marginTop="17dp"
+        android:layout_marginStart="90dp"
+        android:layout_toEndOf="@id/text"
+        android:text="View All"
+        android:textColor="#0B7C71"
+        android:textSize="15sp" />
+
+    <!-- Example TextView with grey square background -->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/viewAllText"
+            android:id="@+id/topmentor"
+            android:layout_marginStart="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topmentor"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="24dp"
+        android:text="Education Mentors"
+        android:textColor="#0B7C71"
+        android:textStyle="bold"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/viewAllText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topmentor"
+        android:layout_marginTop="17dp"
+        android:layout_marginStart="90dp"
+        android:layout_toEndOf="@id/text"
+        android:text="View All"
+        android:textColor="#0B7C71"
+        android:textSize="15sp" />
+
+
+
+    <!-- Example TextView with grey square background -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:id="@+id/horizontalScrollView2"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Example TextView with grey square background -->
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/greyrectangle">
+
+                <!-- Inner rectangle -->
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/lightwhite" />
+
+                <!-- First TextView -->
+                <TextView
+                    android:id="@+id/firsttextscroll2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginEnd="40dp"
+                    android:textColor="@color/black"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    android:text="Michael Drake" />
+
+                <!-- Second TextView in front of the first TextView -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/firsttextscroll2"
+                    android:text="$900/Session"
+                    android:layout_marginStart="-45dp"
+                    android:textColor="#FFEB3B"
+                    android:textSize="5sp"
+                    />
+                <TextView
+                    android:id="@+id/firsttextscroll3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@+id/firsttextscroll2"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginTop="-50dp"
+                    android:textColor="@color/black"
+                    android:textSize="6sp"
+                    android:text="NLP Expert"
+                    />
+                <ImageView
+                    android:id="@+id/heartImageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="68dp"
+                    android:src="@drawable/red_heart_icon"
+                    android:contentDescription="Heart Icon"/>
+                <View
+                    android:id="@+id/smallGreenCircle5"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_below="@id/firsttextscroll3"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/greencircle" />
+
+                <!-- Text -->
+                <TextView
+                    android:id="@+id/smallCircleText5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="87dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@id/smallGreenCircle5"
+                    android:text="Available"
+                    android:textColor="#8BC34A"
+                    android:textSize="8sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/greyrectangle">
+
+                <!-- Inner rectangle -->
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/lightwhite" />
+
+                <!-- First TextView -->
+                <TextView
+                    android:id="@+id/firsttext6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginEnd="40dp"
+                    android:textColor="@color/black"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    android:text="Alex" />
+
+                <!-- Second TextView in front of the first TextView -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/firsttext6"
+                    android:text="$200/Session"
+                    android:layout_marginStart="-45dp"
+                    android:textColor="#FFEB3B"
+                    android:textSize="5sp"
+                    />
+                <TextView
+                    android:id="@+id/firsttext26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@+id/firsttext6"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginTop="-50dp"
+                    android:textColor="@color/black"
+                    android:textSize="6sp"
+                    android:text="Android Developer"
+                    />
+                <ImageView
+                    android:id="@+id/heartImageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="68dp"
+                    android:src="@drawable/grey_heart"
+                    android:contentDescription="Heart Icon"/>
+                <View
+                    android:id="@+id/smallgreycircle6"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_below="@id/firsttext26"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/lightgreycircle" />
+
+                <!-- Text -->
+                <TextView
+                    android:id="@+id/smallCircleText6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="87dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@id/smallgreycircle6"
+                    android:text="Not Available"
+                    android:textColor="#A9A9A9"
+                    android:textSize="8sp" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/greyrectangle">
+
+                <!-- Inner rectangle -->
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/lightwhite" />
+
+                <!-- First TextView -->
+                <TextView
+                    android:id="@+id/firsttext7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginEnd="40dp"
+                    android:textColor="@color/black"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    android:text="Jane" />
+
+                <!-- Second TextView in front of the first TextView -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/firsttext7"
+                    android:text="$100/Session"
+                    android:layout_marginStart="-45dp"
+                    android:textColor="#FFEB3B"
+                    android:textSize="5sp"
+                    />
+                <TextView
+                    android:id="@+id/firsttext27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@+id/firsttext7"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginTop="-50dp"
+                    android:textColor="@color/black"
+                    android:textSize="6sp"
+                    android:text="software engineer"
+                    />
+                <ImageView
+                    android:id="@+id/heartImageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="68dp"
+                    android:src="@drawable/grey_heart"
+                    android:contentDescription="Heart Icon"/>
+                <View
+                    android:id="@+id/smallgreycircle7"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_below="@id/firsttext27"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/lightgreycircle" />
+
+                <!-- Text -->
+                <TextView
+                    android:id="@+id/smallCircleText7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="87dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@id/smallgreycircle7"
+                    android:text="Not Available"
+                    android:textColor="#A9A9A9"
+                    android:textSize="8sp" />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horizontalScrollView2"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="24dp"
+        android:text="Education Mentors"
+        android:textColor="#0B7C71"
+        android:textStyle="bold"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/viewAllText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horizontalScrollView2"
+        android:layout_marginTop="17dp"
+        android:layout_marginStart="90dp"
+        android:layout_toEndOf="@id/text"
+        android:text="View All"
+        android:textColor="#0B7C71"
+        android:textSize="15sp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewAllText3"
+        android:id="@+id/horizontalScrollView3"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- First TextView with grey rectangle background -->
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:background="@drawable/greyrectangle"
+                />
+
+            <!-- Second TextView with grey rectangle background -->
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:background="@drawable/greyrectangle"
+                />
+
+            <!-- Third TextView with grey rectangle background -->
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:background="@drawable/greyrectangle"
+                />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-40dp"
+        android:layout_below="@id/horizontalScrollView3">
+
+        <!-- Grey rectangle background -->
+        <RelativeLayout
+            android:id="@+id/rectangleBackground"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:background="@drawable/sevenrectangle">
+
+            <!-- Icon 1: Home -->
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                app:srcCompat="@drawable/home_icon_silhouette_svgrepo_com" />
+
+            <!-- Name for Icon 1: Home -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon1"
+                android:textColor="@color/white"
+                android:layout_marginStart="30dp"
+                android:layout_centerHorizontal="false"
+                android:text="Home" />
+
+            <!-- Icon 3: Search -->
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/icon1"
+                android:layout_marginStart="50dp"
+                app:tint="#D7D0D8"
+                app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
+
+            <!-- Name for Icon 3: Search -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon3"
+                android:textColor="@color/white"
+                android:layout_marginStart="120dp"
+                android:layout_centerHorizontal="false"
+                android:text="Search" />
+
+            <!-- Icon 4: Chat -->
+            <ImageView
+                android:id="@+id/icon4"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/icon3"
+                android:layout_marginStart="50dp"
+                app:tint="#D7D0D8"
+                app:srcCompat="@android:drawable/stat_notify_chat" />
+
+            <!-- Name for Icon 4: Chat -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon4"
+                android:textColor="@color/white"
+                android:layout_marginStart="225dp"
+                android:layout_centerHorizontal="false"
+                android:text="Chat" />
+
+            <!-- Icon 2: Profile -->
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/icon4"
+                android:layout_marginStart="50dp"
+                app:srcCompat="@drawable/user_profile_svgrepo_com" />
+
+            <!-- Name for Icon 2: Profile -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon2"
+                android:textColor="@color/white"
+                android:layout_marginStart="320dp"
+                android:layout_centerHorizontal="false"
+                android:text="Profile" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="625dp"
+        android:layout_marginStart="170dp"
+        android:background="@drawable/small_circle"
+        android:src="@drawable/plus"
+        app:tint="@android:color/white" />
+
+
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4"
+    android:background="#CEF5FA">
+
+
+    <ImageView
+        android:id="@+id/arrowImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="20dp"
+        android:rotation="-135"
+        android:src="@drawable/arrow_right_top_svgrepo_com"
+        android:contentDescription="Arrow Icon"
+        app:tint="#0B7C71" />
+    <TextView
+        android:id="@+id/main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:paddingTop="20dp"
+        android:text="Reset  Password?"
+        android:textColor="#0B7C71"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/phoneLayout"
+        android:layout_width="310dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="1dp"
+        >
+
+        <TextView
+            android:id="@+id/phonePrefix"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:text="Please type a new password and re-enter the
+password. Type something you will remember!"
+
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="200dp"
+        android:text="New Password"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/white"
+        android:drawablePadding="8dp"
+        android:hint="Enter Email"
+        android:padding="8dp"
+        android:textColor="@color/black" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="300dp"
+        android:text="Confirm Password"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/white"
+        android:drawablePadding="8dp"
+        android:hint="Re-enter Password"
+        android:padding="8dp"
+        android:textColor="@color/black" />
+
+
+    <TextView
+        android:id="@+id/verifyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Password"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#38817A"
+        android:padding="10dp"
+
+        android:layout_below="@id/password"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/button"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" />
+
+
+    <RelativeLayout
+        android:id="@+id/phoneLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verifyButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/phonePrefix1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don’t want to reset password?"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/phoneNumber1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#0B7C71"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/phonePrefix1"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
+
+
+

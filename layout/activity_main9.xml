@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4"
+    android:background="#CEF5FA">
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rectangle9"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        >
+
+        <ImageView
+            android:id="@+id/backgroundImageView"
+
+            android:layout_width="100dp"
+            android:layout_height="130dp"
+            android:src="@drawable/twocircle2"/>
+
+        <ImageView
+            android:id="@+id/arrowImageView9"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="10dp"
+            android:rotation="-135"
+            android:src="@drawable/arrow_right_top_svgrepo_com"
+            android:contentDescription="Arrow Icon"
+            app:tint="#0B7C71" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="19dp"
+        android:paddingTop="20dp"
+        android:text="Search Results"
+        android:textColor="#0B7C71"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/leftButton"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@id/main"
+        android:paddingStart="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="30dp"
+        android:text="Filter"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#0B7C71"
+        android:background="@drawable/rectangle"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:drawableEnd="@drawable/arrow_drop_down_svgrepo_com"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/rectangle"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/leftButton">
+        <TextView
+            android:id="@+id/rectangle1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/greyrectangle"
+            android:gravity="center"
+            android:textColor="#0B7C71"
+            android:textStyle="bold" />
+        <RelativeLayout
+            android:layout_width="240dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-10dp"
+            android:layout_toRightOf="@+id/rectangle1"
+            android:layout_height="120dp">
+            <!-- Inner rectangle -->
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/lightwhite" />
+
+            <!-- First TextView -->
+            <TextView
+                android:id="@+id/firsttext"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Sample 1" />
+
+            <!-- Second TextView in front of the first TextView -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="57dp"
+                android:text="$1500/Session"
+                android:textColor="#FFEB3B"
+                android:textSize="9sp"
+                />
+            <TextView
+                android:id="@+id/firsttext2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/firsttext"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="-46dp"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                android:text="Lead - Technology Officer"
+                />
+            <ImageView
+                android:id="@+id/heartImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="72dp"
+                android:src="@drawable/red_heart_icon"
+                android:contentDescription="Heart Icon"/>
+            <View
+                android:id="@+id/smallGreenCircle"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_below="@id/firsttext2"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/greencircle" />
+
+            <!-- Text -->
+            <TextView
+                android:id="@+id/smallCircleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="93dp"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/smallGreenCircle"
+                android:text="Available"
+                android:textColor="#8BC34A"
+                android:textSize="8sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/rectangle2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/rectangle1"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/greyrectangle"
+            android:gravity="center"
+            android:textColor="#0B7C71"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="240dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_toRightOf="@+id/rectangle2"
+            android:layout_height="120dp">
+            <!-- Inner rectangle -->
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/lightwhite" />
+
+            <!-- First TextView -->
+            <TextView
+                android:id="@+id/secondtext"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Sample 2" />
+
+            <!-- Second TextView in front of the first TextView -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="57dp"
+                android:text="$1500/Session"
+                android:textColor="#FFEB3B"
+                android:textSize="9sp"
+                />
+            <TextView
+                android:id="@+id/secondtext2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/secondtext"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="-46dp"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                android:text="Lead - Technology Officer"
+                />
+            <ImageView
+                android:id="@+id/heartImageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="72dp"
+                android:src="@drawable/grey_heart"
+                android:contentDescription="Heart Icon"/>
+            <View
+                android:id="@+id/smallGreenCircle1"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_below="@id/secondtext2"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/lightgreycircle" />
+
+            <!-- Text -->
+            <TextView
+                android:id="@+id/smallCircleText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="93dp"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/smallGreenCircle1"
+                android:text="Available"
+                android:textColor="#8BC34A"
+                android:textSize="8sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/rectangle3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/rectangle2"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/greyrectangle"
+            android:gravity="center"
+            android:textColor="#0B7C71"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="240dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="210dp"
+            android:layout_toRightOf="@+id/rectangle1"
+            android:layout_height="120dp">
+            <!-- Inner rectangle -->
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/lightwhite" />
+
+            <!-- First TextView -->
+            <TextView
+                android:id="@+id/thirdtext"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Sample 3" />
+
+            <!-- Second TextView in front of the first TextView -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="57dp"
+                android:text="$1500/Session"
+                android:textColor="#FFEB3B"
+                android:textSize="9sp"
+                />
+            <TextView
+                android:id="@+id/thirdtext2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/thirdtext"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="-46dp"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                android:text="Lead - Technology Officer"
+                />
+            <ImageView
+                android:id="@+id/heartImageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="72dp"
+                android:src="@drawable/grey_heart"
+                android:contentDescription="Heart Icon"/>
+            <View
+                android:id="@+id/smallGreenCircle2"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_below="@id/thirdtext2"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/lightgreycircle" />
+
+            <!-- Text -->
+            <TextView
+                android:id="@+id/smallCircleText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="93dp"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/smallGreenCircle2"
+                android:text="Available"
+                android:textColor="#8BC34A"
+                android:textSize="8sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/rectangle4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/rectangle3"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/greyrectangle"
+            android:gravity="center"
+            android:textColor="#0B7C71"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:layout_width="240dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="330dp"
+            android:layout_toRightOf="@+id/rectangle1"
+            android:layout_height="120dp">
+            <!-- Inner rectangle -->
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/lightwhite" />
+
+            <!-- First TextView -->
+            <TextView
+                android:id="@+id/fourtext"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Sample 4" />
+
+            <!-- Second TextView in front of the first TextView -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="57dp"
+                android:text="$1500/Session"
+                android:textColor="#FFEB3B"
+                android:textSize="9sp"
+                />
+            <TextView
+                android:id="@+id/fourtext2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/fourtext"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="-46dp"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                android:text="Lead - Technology Officer"
+                />
+            <ImageView
+                android:id="@+id/heartImageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="72dp"
+                android:src="@drawable/red_heart_icon"
+                android:contentDescription="Heart Icon"/>
+            <View
+                android:id="@+id/smallGreenCircle3"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_below="@id/fourtext2"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/greencircle" />
+
+            <!-- Text -->
+            <TextView
+                android:id="@+id/smallCircleText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="93dp"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/smallGreenCircle3"
+                android:text="Available"
+                android:textColor="#8BC34A"
+                android:textSize="8sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/rectangle5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/rectangle4"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/greyrectangle"
+            android:gravity="center"
+            android:textColor="#0B7C71"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="240dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="420dp"
+            android:layout_toRightOf="@+id/rectangle5"
+            android:layout_height="120dp">
+            <!-- Inner rectangle -->
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/lightwhite" />
+
+            <!-- First TextView -->
+            <TextView
+                android:id="@+id/fivetext"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Sample 5" />
+
+            <!-- Second TextView in front of the first TextView -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="57dp"
+                android:text="$1500/Session"
+                android:textColor="#FFEB3B"
+                android:textSize="9sp"
+                />
+            <TextView
+                android:id="@+id/fivetext2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/fivetext"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="-46dp"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                android:text="Lead - Technology Officer"
+                />
+            <ImageView
+                android:id="@+id/heartImageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="72dp"
+                android:src="@drawable/red_heart_icon"
+                android:contentDescription="Heart Icon"/>
+            <View
+                android:id="@+id/smallGreenCircle5"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_below="@id/fivetext2"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/greencircle" />
+
+            <!-- Text -->
+            <TextView
+                android:id="@+id/smallCircleText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="93dp"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/smallGreenCircle5"
+                android:text="Available"
+                android:textColor="#8BC34A"
+                android:textSize="8sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-31dp"
+        android:layout_below="@id/rectangle">
+
+        <!-- Grey rectangle background -->
+        <RelativeLayout
+            android:id="@+id/rectangleBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sevenrectangle">
+
+            <!-- Icon 1: Home -->
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                app:srcCompat="@drawable/home_icon_silhouette_svgrepo_com" />
+
+            <!-- Name for Icon 1: Home -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon1"
+                android:textColor="@color/white"
+                android:layout_marginStart="30dp"
+                android:layout_centerHorizontal="false"
+                android:text="Home" />
+
+            <!-- Icon 3: Search -->
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/icon1"
+                android:layout_marginStart="50dp"
+                app:tint="#D7D0D8"
+                app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
+
+            <!-- Name for Icon 3: Search -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon3"
+                android:textColor="@color/white"
+                android:layout_marginStart="120dp"
+                android:layout_centerHorizontal="false"
+                android:text="Search" />
+
+            <!-- Icon 4: Chat -->
+            <ImageView
+                android:id="@+id/icon4"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/icon3"
+                android:layout_marginStart="50dp"
+                app:tint="#D7D0D8"
+                app:srcCompat="@android:drawable/stat_notify_chat" />
+
+            <!-- Name for Icon 4: Chat -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon4"
+                android:textColor="@color/white"
+                android:layout_marginStart="225dp"
+                android:layout_centerHorizontal="false"
+                android:text="Chat" />
+
+            <!-- Icon 2: Profile -->
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/icon4"
+                android:layout_marginStart="50dp"
+                app:srcCompat="@drawable/user_profile_svgrepo_com" />
+
+            <!-- Name for Icon 2: Profile -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon2"
+                android:textColor="@color/white"
+                android:layout_marginStart="320dp"
+                android:layout_centerHorizontal="false"
+                android:text="Profile" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="633dp"
+        android:layout_marginStart="170dp"
+        android:background="@drawable/small_circle"
+        android:src="@drawable/plus"
+        app:tint="@android:color/white" />
+
+
+
+</RelativeLayout>
+
+
+

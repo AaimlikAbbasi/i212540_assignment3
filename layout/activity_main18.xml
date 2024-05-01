@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".MainActivity18"
+    android:background="#CEF5FA">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rectangle"
+        android:layout_height="wrap_content"
+        android:background="@drawable/acticity_10_rectangle">
+
+
+
+
+        <ImageView
+            android:id="@+id/arrowImageView9"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:rotation="-135"
+            android:src="@drawable/arrow_right_top_svgrepo_com"
+            android:contentDescription="Arrow Icon"
+            app:tint="#0B7C71" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/content"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="30dp">
+
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_marginStart="100dp"
+                android:layout_width="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="50dp"
+                app:srcCompat="@android:drawable/presence_video_online"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                app:srcCompat="@android:drawable/stat_sys_phone_call"
+                app:tint="@color/white" />
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:text="John Cooper's"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/main10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="135dp"
+            android:text="Community"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/profileImage"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main10"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="160dp">
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/yellowring"
+                android:layout_margin="10dp" /> <!-- Adjust margin as needed -->
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="38dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="24dp"
+                app:srcCompat="@drawable/yellowfulledcircle" />
+
+            <ImageView
+                android:id="@+id/profileImage1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="Profile Image"
+                android:src="@drawable/man1" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="240dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView31"
+            android:layout_width="77dp"
+            android:layout_height="134dp"
+            android:visibility="gone"
+            tools:ignore="MissingClass" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="hello"
+            android:background="@drawable/rectangle"
+            android:id="@+id/show_message"
+            android:textColor="@color/black"
+            android:padding="8dp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="30dp"
+        android:id="@+id/box"
+        android:layout_marginTop="562dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/acticity_10_rectangle"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/name2"
+            android:textColorHint="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:backgroundTint="#45C3D5"
+            android:background="@drawable/rounded_edittext_background"
+            android:drawablePadding="8dp"
+            android:hint="Type something..."
+            android:padding="15dp"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_gallery"
+            app:tint="@color/white" />
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="1dp"
+            android:rotation="90"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/_11853_link_icon"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_marginTop="11dp"
+            app:tint="@color/white"
+            android:layout_marginStart="300dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_btn_speak_now" />
+        <ImageView
+            android:id="@+id/imageView29"
+            android:layout_width="30dp"
+            android:layout_marginTop="6dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="270dp"
+            app:srcCompat="@drawable/camera_svgrepo_com"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="30dp"
+            app:tint="@color/white"
+            android:layout_marginTop="7dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="330dp"
+            app:srcCompat="@android:drawable/ic_menu_send" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="640dp">
+
+        <!-- Grey rectangle background -->
+        <RelativeLayout
+            android:id="@+id/rectangleBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sevenrectangle">
+
+            <!-- Icon 1: Home -->
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                app:srcCompat="@drawable/home_icon_silhouette_svgrepo_com" />
+
+            <!-- Name for Icon 1: Home -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon1"
+                android:textColor="@color/white"
+                android:layout_marginStart="30dp"
+                android:layout_centerHorizontal="false"
+                android:text="Home" />
+
+            <!-- Icon 3: Search -->
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/icon1"
+                android:layout_marginStart="50dp"
+                app:tint="#D7D0D8"
+                app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
+
+            <!-- Name for Icon 3: Search -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon3"
+                android:textColor="@color/white"
+                android:layout_marginStart="120dp"
+                android:layout_centerHorizontal="false"
+                android:text="Search" />
+
+            <!-- Icon 4: Chat -->
+            <ImageView
+                android:id="@+id/icon4"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/icon3"
+                android:layout_marginStart="50dp"
+                app:tint="#D7D0D8"
+                app:srcCompat="@android:drawable/stat_notify_chat" />
+
+            <!-- Name for Icon 4: Chat -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon4"
+                android:textColor="@color/white"
+                android:layout_marginStart="225dp"
+                android:layout_centerHorizontal="false"
+                android:text="Chat" />
+
+            <!-- Icon 2: Profile -->
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/icon4"
+                android:layout_marginStart="50dp"
+                app:srcCompat="@drawable/user_profile_svgrepo_com" />
+
+            <!-- Name for Icon 2: Profile -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon2"
+                android:textColor="@color/white"
+                android:layout_marginStart="320dp"
+                android:layout_centerHorizontal="false"
+                android:text="Profile" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+        android:textColor="@color/white"
+        android:layout_marginTop="620dp"
+        android:layout_marginStart="170dp"
+        android:background="@drawable/small_circle"
+        android:src="@drawable/plus"
+        app:tint="@android:color/white" />
+</RelativeLayout>
+

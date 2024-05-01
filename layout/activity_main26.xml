@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity25"
+    android:background="#CEF5FA">
+
+
+    <RelativeLayout
+        android:id="@+id/rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        >
+
+        <ImageView
+            android:id="@+id/backgroundImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/twocircle2"/>
+
+        <ImageView
+            android:id="@+id/arrowImageView"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="10dp"
+            android:rotation="-135"
+            android:src="@drawable/arrow_right_top_svgrepo_com"
+            android:contentDescription="Arrow Icon"
+            app:tint="#0B7C71" />
+
+        <TextView
+            android:id="@+id/main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/backgroundImageView"
+            android:paddingTop="20dp"
+            android:text="Notifications"
+            android:textColor="#0B7C71"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/imageView44"
+            android:layout_width="20dp"
+            android:rotation="30"
+            android:layout_toRightOf="@+id/main"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@android:drawable/ic_popup_reminder"
+            app:tint="#0B7C71" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="#FFEB3B"
+        android:text="Clear All" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_marginStart="30dp"
+
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="You have added a mentor, Alex. Thank you!" />
+
+    <ImageView
+        android:id="@+id/imageView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_marginStart="350dp"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+        app:tint="@color/black" />
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:layout_marginStart="0dp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:textSize="16sp"
+        android:textColor="#0B7C71"
+        android:text="________________________________________________________" />
+
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:layout_marginStart="30dp"
+
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="Your favorites list is expanding. Impressive" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:layout_marginStart="350dp"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+        app:tint="@color/black" />
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:layout_marginStart="0dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:textColor="#0B7C71"
+        android:text="________________________________________________________" />
+
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:layout_marginStart="30dp"
+
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="You have a new message in community." />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:layout_marginStart="350dp"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+        app:tint="@color/black" />
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:layout_marginStart="0dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:textColor="#0B7C71"
+        android:text="________________________________________________________" />
+
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="30dp"
+
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="Your favorite mentor is Online. Say Hi to him." />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="350dp"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+        app:tint="@color/black" />
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="310dp"
+        android:layout_marginStart="0dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:textColor="#0B7C71"
+        android:text="________________________________________________________" />
+
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:layout_marginStart="30dp"
+
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="Thank you for booking a session. Good Luck." />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:layout_marginStart="350dp"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+        app:tint="@color/black" />
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_marginStart="0dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:textColor="#0B7C71"
+        android:text="________________________________________________________" />
+
+</RelativeLayout>
+
+
+

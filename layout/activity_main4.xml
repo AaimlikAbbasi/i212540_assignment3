@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4"
+    android:background="#CEF5FA">
+
+
+    <ImageView
+        android:id="@+id/arrowImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="20dp"
+        android:rotation="-135"
+        android:src="@drawable/arrow_right_top_svgrepo_com"
+        android:contentDescription="Arrow Icon"
+        app:tint="#0B7C71" />
+
+
+    <TextView
+        android:id="@+id/main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="Verify your phone number"
+        android:textColor="#0B7C71"
+        android:paddingTop="20dp"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/phoneLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/phonePrefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:text="We've sent a code to  "
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+92 321 2242022"
+            android:textColor="#0B7C71"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/phonePrefix"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+
+
+    <EditText
+        android:id="@+id/ring1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/phoneLayout"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/ring"
+        android:padding="10dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/ring2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/phoneLayout"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="70dp"
+        android:background="@drawable/ring"
+        android:padding="10dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/ring3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:layout_below="@id/phoneLayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="130dp"
+        android:background="@drawable/ring"
+        android:padding="10dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/ring4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:layout_below="@id/phoneLayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="190dp"
+        android:background="@drawable/ring"
+        android:padding="10dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/ring5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:layout_below="@id/phoneLayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="250dp"
+        android:background="@drawable/ring"
+        android:padding="10dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/ring6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:layout_below="@id/phoneLayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="310dp"
+        android:background="@drawable/ring"
+        android:padding="10dp"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/verifyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#38817A"
+        android:layout_below="@id/ring2"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/button"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:id="@+id/phoneLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verifyButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/phonePrefix1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send code again "
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/phoneNumber1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:20"
+            android:textColor="#0B7C71"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/phonePrefix1"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <!--second divider do not distrub-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="300dp">
+
+        <!-- Larger Rectangle Background -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#81E6DC" /> <!-- Adjust rectangle color here -->
+
+        <!-- First Row of Small Rectangles -->
+        <LinearLayout
+            android:id="@+id/firstRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="false"
+            android:orientation="horizontal"
+            android:layout_margin="30dp">
+
+            <!-- Small Rectangles for the First Row -->
+            <RelativeLayout
+                android:id="@+id/smallRectangle1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/rectangle">
+
+                <!-- View for the background -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle" />
+
+                <!-- Text inside the Small Rectangle 1 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="1"
+                    android:textSize="34sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+            </RelativeLayout>
+
+            <!-- Small Rectangle 2 with text -->
+            <RelativeLayout
+                android:id="@+id/smallRectangle2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/rectangle">
+
+                <!-- View for the background -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle" />
+
+                <!-- Text inside the Small Rectangle 2 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="2"
+                    android:textSize="34sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/smallRectangle3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/rectangle">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="3"
+                    android:textSize="34sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!-- Second Row of Small Rectangles -->
+        <LinearLayout
+            android:id="@+id/secondRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstRow"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:orientation="horizontal">
+            <!-- Small Rectangles for the Second Row -->
+            <RelativeLayout
+                android:id="@+id/smallRectangle4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/rectangle">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="3"
+                    android:textSize="34sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/smallRectangle5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/rectangle"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="5"
+                    android:textSize="34sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/smallRectangle6"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/rectangle"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="6"
+                    android:textSize="34sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- Third Row of Small Rectangles -->
+        <LinearLayout
+            android:id="@+id/thirdRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/secondRow"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:orientation="horizontal">
+
+            <!-- Small Rectangles for the Third Row -->
+            <RelativeLayout
+                android:id="@+id/smallRectangle7"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/rectangle">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="7"
+                    android:textSize="34sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:gravity="center"  />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/smallRectangle8"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/rectangle"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="8"
+                    android:textSize="34sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:gravity="center"  />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/smallRectangle9"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/rectangle"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="9"
+                    android:textSize="34sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:gravity="center"  />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/thirdRow"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="false"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <!-- Small Rectangle for the Last Row -->
+            <RelativeLayout
+                android:id="@+id/last1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/rectangle">
+
+                <!-- View for the background -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle" />
+
+                <!-- Text inside the Small Rectangle 1 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="0"
+                    android:textSize="34sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="251dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="370dp"
+            android:layout_marginStart="-100dp"
+            android:layout_marginBottom="100dp"
+            android:layout_toEndOf="@id/last"
+            app:srcCompat="@android:drawable/ic_input_delete" />
+
+
+    </RelativeLayout>
+
+
+    <!-- Second Row of Small Rectangles -->
+
+</RelativeLayout>
+
+
+

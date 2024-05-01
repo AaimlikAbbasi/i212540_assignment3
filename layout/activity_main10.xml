@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity10"
+    android:background="#CEF5FA">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rectangle"
+        android:layout_height="wrap_content"
+        android:background="@drawable/acticity_10_rectangle">
+
+
+        <ImageView
+            android:id="@+id/arrowImageView9"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:rotation="-135"
+            android:src="@drawable/arrow_right_top_svgrepo_com"
+            android:contentDescription="Arrow Icon"
+            app:tint="#0B7C71" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="30dp">
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/person"
+                android:layout_marginStart="30dp"
+                android:layout_toEndOf="@id/main2"
+                android:background="@drawable/lightbluecircle"
+                android:contentDescription="Profile Image" />
+
+            <TextView
+                android:id="@+id/main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Hi, I am "
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/main2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="John Cooper"
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/straightLineImageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content"
+            android:src="@drawable/horizontal_line_svgrepo_com" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/content1"
+            android:layout_below="@+id/straightLineImageView3"
+            android:layout_marginTop="-14dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="1dp">
+
+            <TextView
+                android:id="@+id/start"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:text="4.8"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:layout_marginStart="-30dp"
+                android:layout_toEndOf="@id/imageView6"
+                android:contentDescription="Profile Image" />
+
+            <TextView
+                android:id="@+id/main3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="UX Designer at"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                />
+
+            <TextView
+                android:id="@+id/main4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main3"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Google"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                />
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="260dp"
+                android:layout_marginTop="3dp"
+                app:srcCompat="@android:drawable/btn_star_big_on" />
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/straightLineImageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content1"
+            android:layout_marginTop="-40dp"
+            android:src="@drawable/horizontal_line_svgrepo_com" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/content2"
+            android:layout_below="@+id/straightLineImageView2"
+            android:layout_marginTop="-14dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="1dp">
+
+            <TextView
+                android:id="@+id/main5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="About me"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/main6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main5"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="1dp"
+                android:text="I am a passionate UX designer at Google with a focus on
+creating user-centric and intuitive interfaces. With 10 years of
+experience, I have had the opportunity to work on diverse
+projects that have shaped my understanding of design
+principles and user experience."
+                android:textColor="@color/white"
+                android:layout_marginBottom="5dp"
+                android:textSize="14sp"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/after"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/rectangle"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-10dp"
+        android:paddingTop="20dp"
+        android:text="My Experties Include"
+        android:textColor="#0B7C71"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/userexperience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rectangle"
+        android:layout_marginStart="-80dp"
+        android:layout_marginTop="40dp"
+
+        android:layout_marginBottom="30dp"
+        android:layout_toRightOf="@+id/prototyping"
+        android:background="@drawable/activity10_rec"
+        android:padding="8dp"
+        android:text="User Experience Design"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/leadership"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="Leadership"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/after"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:background="@drawable/activity10_rec"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/entrepreneurshipText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="Career Advice"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/rectangle"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:background="@drawable/activity10_rec"
+        android:padding="8dp" />
+
+
+    <TextView
+        android:id="@+id/prototyping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="Prototyping"
+        android:layout_toRightOf="@+id/entrepreneurshipText"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/after"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:background="@drawable/activity10_rec"
+        android:padding="8dp" />
+
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/prototyping"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFC107"
+        android:text="Drop A View"
+        android:textColor="#0B7C71"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp" />
+    <Button
+        android:id="@+id/loginButton2"
+        android:layout_width="176dp"
+        android:layout_height="48dp"
+        android:layout_toRightOf="@+id/loginButton"
+        android:layout_below="@id/prototyping"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFC107"
+        android:text="Join Community"
+        android:textColor="#0B7C71"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp" />
+    <TextView
+        android:id="@+id/loginButton3"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/loginButton2"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="#0B7C71"
+        android:background="@drawable/activity10_rec"
+        android:text="Book A Section"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>
+
+
+
